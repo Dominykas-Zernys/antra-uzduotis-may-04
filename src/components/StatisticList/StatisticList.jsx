@@ -7,7 +7,7 @@ const StatisticList = ({ statistics }) => {
   return (
     <S.StatisticList>
       {statistics.map((stat) => (
-        <Statistic title={stat.title} metric={stat.metric} />
+        <Statistic key={stat.id} title={stat.title} metric={stat.metric} />
       ))}
     </S.StatisticList>
   );
